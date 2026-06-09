@@ -1,0 +1,532 @@
+  /* External CSS style sheet for index.html */
+
+  /* Navigation Bar */
+  * {
+    box-sizing: border-box;
+  }
+
+  h2 {
+    font-family: Tahoma, sans-serif;
+  }
+
+  h3 {
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    color: #345995;
+  }
+
+  body {
+    font-family: Georgia, serif;
+    margin: 0;
+  }
+
+  .KL {
+    color: white;
+    background: #E40066;
+    padding: 5px;
+    text-align: center;
+  }
+
+  /* Header */
+  header {
+    padding: 100px;
+    text-align: center;
+    color: white;
+    background: #1abc9c;
+    background-image: url("images/adobestockCitySkylineTransparent.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  /* Top navigation bar */
+  .navbar {
+    display: flex;
+    background-color: #E40066;
+    align-content: center;
+  }
+
+  /* Navigation bar links */
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #345995;
+    color: white;
+  }
+
+  .navbar a.active {
+    background-color: #EAC435;
+    color: black;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .container,
+    .navbar {
+      flex-direction: column;
+    }
+  }
+
+  /* Table */
+  .currencyExchangeRate,
+  .currencyExchangeRate th {
+    background-color: #03CEA4;
+    color: black;
+    text-align: center;
+    font-family: Garamond, serif;
+    letter-spacing: 0.5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .currencyExchangeRate,
+  .currencyExchangeRate td {
+    border: 1px solid black;
+    background-color: #EAC435;
+    color: black;
+    text-align: center;
+    font-family: Garamond, serif;
+    letter-spacing: 0.5px;
+  }
+
+  .currencyExchangeRate {
+    border-collapse: collapse;
+  }
+
+  .currencyExchangeRate td {
+    padding: 5px;
+  }
+
+  /* Form */
+  form {
+    border: double 4px #E40066;
+    border-radius: 30px;
+    width: 70%;
+    padding: 0% 10%;
+    margin: auto;
+    background-color: #345995;
+    color: white;
+    font-family: Georgia, serif;
+  }
+
+  /* Video */
+  .media {
+    float: right;
+    padding-top: 3px;
+    padding-right: 3%;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .media iframe {
+    float: right;
+    width: 250px;
+    height: 200px;
+  }
+
+  footer {
+    background-color: #03CEA4;
+    text-align: center;
+  }
+
+  /*      SMALL SCREENS      */
+  /* These styles apply to small screens */
+
+  h2 {
+    color: #345995;
+  }
+
+  /*This defines the TOTAL width of the articles - remember TOTAL WIDTH = width + padding left&right + border left&right + margin left+right */
+  article {
+    width: 96%;
+    padding: 2px;
+    margin: auto;
+    /*The following will ensure that articles with floated content are displayed properly*/
+    overflow: auto;
+  }
+
+  .history img {
+    max-width: 60%;
+    height: auto;
+    float: left;
+    padding-right: 5%;
+  }
+
+  .whereToStay img {
+    max-width: 40%;
+    height: auto;
+    float: left;
+    padding-right: 5%;
+  }
+
+  .travelTips img {
+    max-width: 55%;
+    height: auto;
+    float: right;
+    padding-left: 5%;
+  }
+
+  .petalingStreet img {
+    max-width: 60%;
+    height: auto;
+    float: right;
+    padding-left: 5%;
+  }
+
+  .puduFoodStreet img {
+    max-width: 60%;
+    height: auto;
+    float: right;
+    padding-left: 5%;
+  }
+
+  .jalanAlor img {
+    max-width: 40%;
+    height: auto;
+    float: left;
+    padding-right: 5%;
+  }
+
+  .towers img {
+    max-width: 40%;
+    height: auto;
+    float: left;
+    padding-right: 5%;
+  }
+
+  .forest img {
+    max-width: 50%;
+    height: auto;
+    float: right;
+    padding-left: 5%;
+  }
+
+  .caves img {
+    max-width: 50%;
+    height: auto;
+    float: left;
+    padding-right: 5%;
+  }
+
+  /*      MEDIUM SCREENS      */
+  @media (min-width: 600px) {
+
+    /*Work on each article using the class name*/
+    .history {
+      width: 42%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      float: left;
+      /*width 42 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 50*/
+    }
+
+    .whereToStay {
+      width: 42%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      float: left;
+      /*width 42 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 50*/
+    }
+
+    .travelTips {
+      width: 92%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      clear: both;
+      /*width 92 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 100*/
+    }
+
+    .jalanAlor {
+      width: 42%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      float: left;
+      /*width 42 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 50*/
+    }
+
+    /* Video */
+    .media {
+      float: left;
+      padding-top: 3px;
+      padding-right: 3%;
+      height: 215px;
+      overflow: hidden;
+    }
+
+    .media iframe {
+      float: left;
+      width: 250px;
+      height: 215px;
+    }
+
+    .petalingStreet {
+      width: 42%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      float: left;
+      /*width 42 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 50*/
+    }
+
+    .puduFoodStreet {
+      width: 92%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      clear: both;
+      /*width 92 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 100*/
+    }
+
+    .towers {
+      width: 42%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      float: left;
+      /*width 42 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 50*/
+    }
+
+    .forest {
+      width: 42%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      float: left;
+      /*width 42 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 50*/
+    }
+
+    .caves {
+      width: 92%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      clear: both;
+      /*width 92 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 100*/
+    }
+
+    /*IMAGES for the medium screen*/
+    .history img {
+      max-width: 60%;
+      height: auto;
+      float: left;
+      padding-right: 5%;
+    }
+
+    .whereToStay img {
+      max-width: 60%;
+      height: auto;
+      float: left;
+      padding-right: 5%;
+    }
+
+    .travelTips img {
+      max-width: 40%;
+      height: auto;
+    }
+
+    .jalanAlor img {
+      max-width: 50%;
+      height: auto;
+      float: right;
+      padding-left: 5%;
+    }
+
+    .petalingStreet img {
+      max-width: 50%;
+      height: auto;
+      float: left;
+      padding-right: 5%;
+    }
+
+    .puduFoodStreet img {
+      max-width: 60%;
+      height: auto;
+    }
+
+    .towers img {
+      max-width: 65%;
+      height: auto;
+    }
+
+    .forest img {
+      max-width: 65%;
+      height: auto;
+      float: right;
+      padding-left: 5%;
+    }
+
+    .caves img {
+      max-width: 60%;
+      height: auto;
+      float: left;
+      padding-right: 5%;
+    }
+
+    /*This is the end of the media query for medium screens*/
+  }
+
+  /*      LARGE SCREENS      */
+  /* This is our second media query
+     The styles here apply to screens that are 992px wide or wider
+     Tip - all CSS properties and values are inherited from the CSS for the small screen AND the medium screen.  This means that you only change the properties and values that need to change for the large screen.*/
+
+  @media (min-width: 992px) {
+
+    .history {
+      width: 92%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      /*width 92 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 100*/
+    }
+
+    .whereToStay {
+      width: 42%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      /*width 42 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 50*/
+    }
+
+    .travelTips {
+      width: 42%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      clear: none;
+      /*width 42 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 50*/
+    }
+
+    .jalanAlor {
+      width: 92%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      /*width 92 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 100*/
+    }
+
+    /* Video */
+    .media {
+      float: left;
+      padding-top: 3px;
+      padding-right: 3%;
+      height: 320px;
+      overflow: hidden;
+    }
+
+    .media iframe {
+      float: left;
+      width: 400px;
+      height: 320px;
+    }
+
+    .petalingStreet {
+      width: 42%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      /*width 42 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 50*/
+    }
+
+    .puduFoodStreet {
+      width: 42%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      clear: none;
+      /*width 42 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 50*/
+    }
+
+    .towers {
+      width: 92%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      /*width 92 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 100*/
+    }
+
+    .forest {
+      width: 42%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      /*width 42 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 50*/
+    }
+
+    .caves {
+      width: 42%;
+      padding: 2%;
+      border: 0px;
+      margin: 2%;
+      clear: none;
+      /*width 42 + padding left&right 4 + border left&right 0 + margin left&right 4 = TOTAL WIDTH 50*/
+    }
+
+    /*IMAGES for the large screen*/
+    .history img {
+      max-width: 40%;
+      height: auto;
+      float: left;
+      padding-right: 1%;
+    }
+
+    .whereToStay img {
+      max-width: 50%;
+      height: auto;
+      float: left;
+      padding-right: 5%;
+    }
+
+    .travelTips img {
+      max-width: 50%;
+      height: auto;
+      float: right;
+      padding-right: 5%;
+    }
+
+    .jalanAlor img {
+      max-width: 30%;
+      height: auto;
+    }
+
+    .petalingStreet img {
+      max-width: 65%;
+      height: auto;
+      float: left;
+    }
+
+    .puduFoodStreet img {
+      max-width: 50%;
+      height: auto;
+      float: left;
+      padding-right: 5%;
+    }
+
+    .towers img {
+      max-width: 25%;
+      height: auto;
+    }
+
+    .forest img {
+      max-width: 50%;
+      height: auto;
+    }
+
+    .caves img {
+      max-width: 70%;
+      height: auto;
+      float: left;
+    }
+
+    /*This is the end of the media query for large screens*/
+  }
